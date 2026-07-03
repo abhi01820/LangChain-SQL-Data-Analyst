@@ -14,3 +14,15 @@ def get_gemini_response(question,prompt):
     response=model.generative_content([prompt,question])
 
     return response.text
+
+
+def read_sql_query(sql,db):
+    conn=sqlite3.connect(db)
+    cur=conn.cursor()
+    cur.execute(sql)
+    rows=cur.fetchall()
+    conn.commit()
+    conn.close()
+    for row in rows:
+        print(row)
+    return rows
