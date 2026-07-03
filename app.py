@@ -11,7 +11,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def get_gemini_response(question,prompt):
     model=genai.GenerativeModel('gemini-pro')
-    response=model.generative_content([prompt,question])
+    response=model.generative_content([prompt[0],question])
 
     return response.text
 
@@ -41,3 +41,21 @@ prompt = [
     also the sql code should not have ``` in beginning or end and sql word in output
     """
 ]
+
+
+
+st.set_page_config(page_title="I can Retrieve Any SQL Query")
+st.header("Gemini App to Retrieve SQL Data ")
+
+question=st.text_input("Input : ",key="input")
+
+submit=st.button("Ask the question")
+
+if submit:
+    response=get_gemini_response(question,prompt)
+    print(response)
+    data=read_sql_query(response,"student.db")
+    st.subheader("The Response is : ")
+    for row in data:
+        print(row)
+        st.header(row)
