@@ -1,5 +1,8 @@
 # LangChain-SQL-Data-Analyst 📊
 
+### 🎥 Video Demo
+[![Demo Video](https://drive.google.com/thumbnail?id=12kFJyT16Zd1Xrnrq7i295GKRfhthbHGV&sz=w800)](https://drive.google.com/file/d/12kFJyT16Zd1Xrnrq7i295GKRfhthbHGV/view?usp=sharing)
+
 LangChain SQL Data Analyst is an interactive web application that allows you to chat with your data. Simply upload a CSV file and ask natural language questions. Powered by Open Source LLMs via LangChain and HuggingFace, it automatically converts your questions into SQL queries, executes them, and provides intelligent insights along with data visualizations.
 
 ## 🚀 Features
