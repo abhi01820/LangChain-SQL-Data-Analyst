@@ -17,3 +17,15 @@ cursor.execute("""INSERT INTO STUDENT VALUES ('Khila', 'Data Science', 'B', 100)
 cursor.execute("""INSERT INTO STUDENT VALUES ('Hardik', 'Computer Science', 'A', 86)""")
 cursor.execute("""INSERT INTO STUDENT VALUES ('Aggarwal', 'DEVOPS', 'A', 50)""")
 cursor.execute("""INSERT INTO STUDENT VALUES ('Lilly', 'DEVOPS', 'A', 35)""")
+
+
+print("The inserted records are : ")
+
+data=cursor.execute('''Select * From STUDENT''')
+
+for row in data:
+    print(row)
+
+
+connection.commit()
+connection.close()
