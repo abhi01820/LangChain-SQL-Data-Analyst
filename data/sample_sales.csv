@@ -1,0 +1,16 @@
+date,product,category,region,quantity,price,revenue
+2023-01-01,Laptop,Electronics,North,5,1000,5000
+2023-01-02,Mouse,Electronics,North,20,25,500
+2023-01-03,Keyboard,Electronics,South,15,50,750
+2023-01-04,Monitor,Electronics,East,10,200,2000
+2023-01-05,Chair,Furniture,West,8,150,1200
+2023-01-06,Desk,Furniture,North,3,300,900
+2023-02-01,Laptop,Electronics,South,7,1000,7000
+2023-02-02,Mouse,Electronics,West,25,25,625
+2023-02-05,Headphones,Electronics,East,30,80,2400
+2023-03-01,Chair,Furniture,South,12,150,1800
+2023-03-10,Desk,Furniture,East,5,300,1500
+2023-03-15,Monitor,Electronics,West,12,200,2400
+2023-04-01,Laptop,Electronics,East,10,1000,10000
+2023-04-05,Keyboard,Electronics,North,20,50,1000
+2023-04-10,Headphones,Electronics,South,40,80,3200

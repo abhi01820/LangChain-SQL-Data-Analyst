@@ -1,8 +1,9 @@
 streamlit
-google-generativeai
-python-dotenv
+pandas
+plotly
+sqlalchemy
 langchain
-PyPDF2
-chromadb
-faiss-cpu
-pdf2image
+langchain-huggingface
+huggingface-hub
+python-dotenv
+sqlparse
